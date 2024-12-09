@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W7_D1 JS-OOP</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="bg-dark text-white ">
+        <h1 class="text-center"> LISTA ANIMALI</h1>
+    </header>
+    <div class="container">
+        <form class="row" id="formAnimals">
+            <div class="col-3">
+                <label for="petName" class="form-label">Nome Animale</label>
+                <input type="text" class="form-control" id="petName">
+            </div>
+            <div class="col-3">
+                <label for="ownerName" class="form-label">Nome Padrone</label>
+                <input type="text" class="form-control" id="ownerName">
+            </div>
+            <div class="col-3">
+                <label for="petSpecies" class="form-label">Specie</label>
+                <input type="text" class="form-control" id="petSpecies">
+            </div>
+            <div class="col-3">
+                <label for="petBreed" class="form-label">Razza</label>
+                <input type="text" class="form-control" id="petBreed">
+            </div>
+            <div class="col-12 text-center py-3">
+                <button class="btn btn-success px-5" id="btnAdd">Add Pet</button>
+            </div>
+        </form>
+        <hr>
+        <div class="container-fluid">
+            <ul class="list-unstyled" id="animalList">
+                
+            </ul>
+        </div>
+        <hr>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
