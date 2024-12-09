@@ -29,6 +29,7 @@ utente3.compareAge(utente1);    //OBJ MINORE
 
 //ESERCIZIO 2
 const pets= [];
+const Owners =[];
 const btnAdd = document.getElementById("btnAdd");
 
 
@@ -38,6 +39,14 @@ class Pet {
         this.ownerName = _ownerName;
         this.species = _species;
         this.breed = _breed;
+    }
+
+    checkOwner(){
+        if(Owners.includes(this.ownerName))
+            console.log("true");
+        else{
+            console.log("false");
+        }
     }
 }
 
@@ -51,8 +60,11 @@ btnAdd.addEventListener("click", function(e){
     
     const pet = new Pet(petName,ownerName,species,breed);
     pets.push(pet);
+    pet.checkOwner();
+    Owners.push(ownerName);
 
     addPet();
+    console.log(Owners);
 });
 
 function addPet(){
@@ -67,7 +79,5 @@ function addPet(){
     });
     formAnimals.reset();
 }
-
-
 
 
